@@ -1,0 +1,138 @@
+body{
+    text-align: center;
+    background-color: #ffffff;
+    display: block;
+    position: absolute;
+}
+
+header div{
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.estacao {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url("bg-estacao.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.estacao::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.estacao div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 60px 20px;
+    z-index: 1;
+}
+
+.sobre {
+    padding-top: 15px;
+    padding-bottom: 15px;    
+}
+
+.praca {
+    height: 575px;
+}
+
+.pontos {
+    background-color: rgb(231, 227, 227);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.casa {
+    height: 575px;
+}
+
+.galeria {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.imggaleria {
+    width: calc((55% / 2) - 15px);
+    opacity: 40%;
+    display: inline;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: rgb(233, 202, 29);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+p {
+    text-align: justify;
+    line-height: 25px;
+    padding-left: 510px;
+    padding-right: 510px;
+}
+
+p::first-letter {
+    font-weight: bold;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0 0px 0;
+}
+
+li::before { 
+    content: ""; 
+    width: 20px;     
+    height: 20px;     
+    background-image: url("seta.png");
+    margin: 0 6px 0 0;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 75px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 28px;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
